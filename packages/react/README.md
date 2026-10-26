@@ -9,7 +9,7 @@
 </p>
 <p align="center">
   <a href="https://github.com/heroui-inc/heroui/blob/main/LICENSE">
-    <img src="https://img.shields.io/npm/l/@heroui/react?style=flat" alt="License">
+    <img src="https://img.shields.io/badge/license-Apache--2.0-blue?style=flat" alt="License">
   </a>
   <a href="https://www.npmjs.com/package/@heroui/react">
     <img src="https://img.shields.io/npm/dm/@heroui/react.svg?style=flat-round" alt="npm downloads">
@@ -33,14 +33,14 @@ HeroUI (previously NextUI) is a production-ready React component library that co
 |---|---|
 | [`@heroui/react`](https://www.npmjs.com/package/@heroui/react) | Full component bundle |
 | [`@heroui/styles`](https://www.npmjs.com/package/@heroui/styles) | Styles / theme only |
-| Individual packages | e.g. `@heroui/button`, `@heroui/modal` — tree-shakeable per-component imports |
+| Component subpaths | e.g. `@heroui/react/button`, `@heroui/react/modal` — per-component imports from the published `@heroui/react` package |
 
 ## Getting Started
 
 Visit [heroui.com/docs/react/getting-started/quick-start](https://heroui.com/docs/react/getting-started/quick-start) to get started with HeroUI.
 
 ```bash
-npm install @heroui/react
+npm install @heroui/styles @heroui/react
 ```
 
 ## Who Is This For?
@@ -61,7 +61,8 @@ HeroUI is built for the AI-assisted development workflow.
 |---|---|
 | **MCP Server** (`@heroui/react-mcp`) | Components that understand your theme — install the server in Cursor, Claude Code, Windsurf, or any MCP-compatible editor |
 | **llms.txt** | Available at [heroui.com/llms.txt](https://heroui.com/llms.txt) — structured context for LLMs about every component |
-| **Agent Skills** | Run `npx heroui-cli agents-md` to install skills for Cursor, Claude Code, and more |
+| **AGENTS.md** | Run `npx heroui-cli@latest agents-md --react` to download React v3 documentation into your project |
+| **Agent Skills** | Run `npx skills add heroui-inc/heroui` to install skills for supported coding agents |
 
 Works with **Cursor**, **Claude Code**, **Windsurf**, **GitHub Copilot**, and any tool that supports MCP or `llms.txt`.
 
@@ -110,4 +111,4 @@ Please adhere to this project's [CODE_OF_CONDUCT](https://github.com/heroui-inc/
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)
