@@ -2,6 +2,62 @@
 import type {DemoItem} from "@/demos";
 
 export const demos: Record<string, DemoItem> = {
+  "sheet-basic": {
+    loader: () => import("./sheet/basic").then((m) => m.Basic),
+    file: "cn/sheet/basic.tsx",
+  },
+  "sheet-placements": {
+    loader: () => import("./sheet/placements").then((m) => m.Placements),
+    file: "cn/sheet/placements.tsx",
+  },
+  "sheet-snap-points": {
+    loader: () => import("./sheet/snap-points").then((m) => m.SnapPoints),
+    file: "cn/sheet/snap-points.tsx",
+  },
+  "sheet-snap-points-sequential": {
+    loader: () => import("./sheet/snap-points-sequential").then((m) => m.SnapPointsSequential),
+    file: "cn/sheet/snap-points-sequential.tsx",
+  },
+  "sheet-snap-points-custom-fade": {
+    loader: () => import("./sheet/snap-points-custom-fade").then((m) => m.SnapPointsCustomFade),
+    file: "cn/sheet/snap-points-custom-fade.tsx",
+  },
+  "sheet-backdrop-variants": {
+    loader: () => import("./sheet/backdrop-variants").then((m) => m.BackdropVariants),
+    file: "cn/sheet/backdrop-variants.tsx",
+  },
+  "sheet-non-dismissable": {
+    loader: () => import("./sheet/non-dismissable").then((m) => m.NonDismissable),
+    file: "cn/sheet/non-dismissable.tsx",
+  },
+  "sheet-scrollable-content": {
+    loader: () => import("./sheet/scrollable-content").then((m) => m.ScrollableContent),
+    file: "cn/sheet/scrollable-content.tsx",
+  },
+  "sheet-with-form": {
+    loader: () => import("./sheet/with-form").then((m) => m.WithForm),
+    file: "cn/sheet/with-form.tsx",
+  },
+  "sheet-detached": {
+    loader: () => import("./sheet/detached").then((m) => m.Detached),
+    file: "cn/sheet/detached.tsx",
+  },
+  "sheet-controlled": {
+    loader: () => import("./sheet/controlled").then((m) => m.Controlled),
+    file: "cn/sheet/controlled.tsx",
+  },
+  "sheet-handle-only": {
+    loader: () => import("./sheet/handle-only").then((m) => m.HandleOnly),
+    file: "cn/sheet/handle-only.tsx",
+  },
+  "sheet-nested": {
+    loader: () => import("./sheet/nested").then((m) => m.Nested),
+    file: "cn/sheet/nested.tsx",
+  },
+  "sheet-professions-picker": {
+    loader: () => import("./sheet/professions-picker").then((m) => m.ProfessionsPicker),
+    file: "cn/sheet/professions-picker.tsx",
+  },
   // Accordion Demo
   "accordion-basic": {
     loader: () => import("./accordion/basic").then((m) => m.Basic),
@@ -949,6 +1005,10 @@ export const demos: Record<string, DemoItem> = {
     loader: () => import("./combo-box/custom-filtering").then((m) => m.CustomFiltering),
     file: "cn/combo-box/custom-filtering.tsx",
   },
+  "combo-box-custom-validation": {
+    loader: () => import("./combo-box/custom-validation").then((m) => m.CustomValidation),
+    file: "cn/combo-box/custom-validation.tsx",
+  },
   "combo-box-render-function": {
     loader: () => import("./combo-box/render-function").then((m) => m.RenderFunction),
     file: "cn/combo-box/render-function.tsx",
@@ -956,6 +1016,18 @@ export const demos: Record<string, DemoItem> = {
   "combo-box-menu-trigger": {
     loader: () => import("./combo-box/menu-trigger").then((m) => m.MenuTrigger),
     file: "cn/combo-box/menu-trigger.tsx",
+  },
+  "combo-box-form-value": {
+    loader: () => import("./combo-box/form-value").then((m) => m.FormValue),
+    file: "cn/combo-box/form-value.tsx",
+  },
+  "combo-box-validation-behavior": {
+    loader: () => import("./combo-box/validation-behavior").then((m) => m.ValidationBehavior),
+    file: "cn/combo-box/validation-behavior.tsx",
+  },
+  "combo-box-read-only": {
+    loader: () => import("./combo-box/read-only").then((m) => m.ReadOnly),
+    file: "cn/combo-box/read-only.tsx",
   },
   "combo-box-multiple-selection": {
     loader: () => import("./combo-box/multiple-selection").then((m) => m.MultipleSelection),
@@ -2214,6 +2286,28 @@ export const demos: Record<string, DemoItem> = {
     file: "cn/skeleton/custom-styles.tsx",
   },
   // Slider Demo
+  "slider-with-steps": {
+    loader: () => import("./slider/with-steps").then((m) => m.WithSteps),
+    file: "cn/slider/with-steps.tsx",
+  },
+  "slider-with-marks": {
+    loader: () => import("./slider/with-marks").then((m) => m.WithMarks),
+    file: "cn/slider/with-marks.tsx",
+  },
+  "slider-with-steps-and-marks": {
+    loader: () => import("./slider/with-steps-and-marks").then((m) => m.WithStepsAndMarks),
+    file: "cn/slider/with-steps-and-marks.tsx",
+  },
+  "slider-range-with-steps-and-marks": {
+    loader: () =>
+      import("./slider/range-with-steps-and-marks").then((m) => m.RangeWithStepsAndMarks),
+    file: "cn/slider/range-with-steps-and-marks.tsx",
+  },
+  "slider-vertical-with-steps-and-marks": {
+    loader: () =>
+      import("./slider/vertical-with-steps-and-marks").then((m) => m.VerticalWithStepsAndMarks),
+    file: "cn/slider/vertical-with-steps-and-marks.tsx",
+  },
   "slider-default": {
     loader: () => import("./slider/default").then((m) => m.Default),
     file: "cn/slider/default.tsx",
@@ -2229,6 +2323,18 @@ export const demos: Record<string, DemoItem> = {
   "slider-range": {
     loader: () => import("./slider/range").then((m) => m.Range),
     file: "cn/slider/range.tsx",
+  },
+  "slider-controlled": {
+    loader: () => import("./slider/controlled").then((m) => m.Controlled),
+    file: "cn/slider/controlled.tsx",
+  },
+  "slider-custom-value-formatting": {
+    loader: () => import("./slider/custom-value-formatting").then((m) => m.CustomValueFormatting),
+    file: "cn/slider/custom-value-formatting.tsx",
+  },
+  "slider-custom-output": {
+    loader: () => import("./slider/custom-output").then((m) => m.CustomOutput),
+    file: "cn/slider/custom-output.tsx",
   },
   "slider-render-function": {
     loader: () => import("./slider/render-function").then((m) => m.RenderFunction),
